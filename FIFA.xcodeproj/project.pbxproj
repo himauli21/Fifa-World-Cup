@@ -20,6 +20,23 @@
 		B423FBBD223182A3001F345B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FBBC223182A3001F345B /* ExtensionDelegate.swift */; };
 		B423FBBF223182A3001F345B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FBBE223182A3001F345B /* NotificationController.swift */; };
 		B423FBC1223182A4001F345B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B423FBC0223182A4001F345B /* Assets.xcassets */; };
+		EC4AF26A22346E1500C7B4A8 /* FifaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4AF26822346E1500C7B4A8 /* FifaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4AF26D22346E1500C7B4A8 /* FifaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4AF26622346E1500C7B4A8 /* FifaKit.framework */; };
+		EC4AF26E22346E1500C7B4A8 /* FifaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC4AF26622346E1500C7B4A8 /* FifaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC4AF27D22346FC600C7B4A8 /* FifaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FBD72231A667001F345B /* FifaTableCell.swift */; };
+		EC4AF287223471D500C7B4A8 /* fifaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4AF285223471D500C7B4A8 /* fifaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4AF28A223471D500C7B4A8 /* fifaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4AF283223471D500C7B4A8 /* fifaKit.framework */; };
+		EC4AF28B223471D500C7B4A8 /* fifaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC4AF283223471D500C7B4A8 /* fifaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC4AF2902234731800C7B4A8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FBD3223182DA001F345B /* Match.swift */; };
+		EC4AF2912234731800C7B4A8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FBD1223182C5001F345B /* Team.swift */; };
+		EC4AF2922234731800C7B4A8 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FBD522318A98001F345B /* Handler.swift */; };
+		EC4AF2962234734F00C7B4A8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF2932234734F00C7B4A8 /* Team.swift */; };
+		EC4AF2972234734F00C7B4A8 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF2942234734F00C7B4A8 /* Handler.swift */; };
+		EC4AF2982234734F00C7B4A8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF2952234734F00C7B4A8 /* Match.swift */; };
+		EC4AF2A02234D08D00C7B4A8 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF29F2234D08D00C7B4A8 /* ScheduleController.swift */; };
+		EC4AF2A22234D11100C7B4A8 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF2A12234D11100C7B4A8 /* ScheduleInterfaceController.swift */; };
+		EC4AF2A4223576CD00C7B4A8 /* SubscriptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF2A3223576CD00C7B4A8 /* SubscriptionInterfaceController.swift */; };
+		EC4AF2A6223576FE00C7B4A8 /* SubscriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AF2A5223576FE00C7B4A8 /* SubscriptionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B423FBB4223182A3001F345B;
 			remoteInfo = "FIFA WatchKit Extension";
+		};
+		EC4AF26B22346E1500C7B4A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B423FB8C2231829D001F345B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4AF26522346E1500C7B4A8;
+			remoteInfo = FifaKit;
+		};
+		EC4AF288223471D500C7B4A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B423FB8C2231829D001F345B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4AF282223471D500C7B4A8;
+			remoteInfo = fifaKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,6 +93,28 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC4AF27222346E1500C7B4A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC4AF26E22346E1500C7B4A8 /* FifaKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF28F223471D500C7B4A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC4AF28B223471D500C7B4A8 /* fifaKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +136,23 @@
 		B423FBC0223182A4001F345B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B423FBC2223182A4001F345B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B423FBC3223182A4001F345B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B423FBD1223182C5001F345B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B423FBD3223182DA001F345B /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		B423FBD522318A98001F345B /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		B423FBD72231A667001F345B /* FifaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifaTableCell.swift; sourceTree = "<group>"; };
+		EC4AF26622346E1500C7B4A8 /* FifaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FifaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4AF26822346E1500C7B4A8 /* FifaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifaKit.h; sourceTree = "<group>"; };
+		EC4AF26922346E1500C7B4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4AF283223471D500C7B4A8 /* fifaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fifaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4AF285223471D500C7B4A8 /* fifaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fifaKit.h; sourceTree = "<group>"; };
+		EC4AF286223471D500C7B4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4AF2932234734F00C7B4A8 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = ../../../../Desktop/Team.swift; sourceTree = "<group>"; };
+		EC4AF2942234734F00C7B4A8 /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Handler.swift; path = ../../../../Desktop/Handler.swift; sourceTree = "<group>"; };
+		EC4AF2952234734F00C7B4A8 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = ../../../../Desktop/Match.swift; sourceTree = "<group>"; };
+		EC4AF29F2234D08D00C7B4A8 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		EC4AF2A12234D11100C7B4A8 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		EC4AF2A3223576CD00C7B4A8 /* SubscriptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionInterfaceController.swift; sourceTree = "<group>"; };
+		EC4AF2A5223576FE00C7B4A8 /* SubscriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +160,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4AF26D22346E1500C7B4A8 /* FifaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B423FBB2223182A3001F345B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4AF28A223471D500C7B4A8 /* fifaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF26322346E1500C7B4A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF280223471D500C7B4A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -109,6 +195,8 @@
 				B423FB962231829D001F345B /* FIFA */,
 				B423FBAA223182A2001F345B /* FIFA WatchKit App */,
 				B423FBB9223182A3001F345B /* FIFA WatchKit Extension */,
+				EC4AF26722346E1500C7B4A8 /* FifaKit */,
+				EC4AF284223471D500C7B4A8 /* fifaKit */,
 				B423FB952231829D001F345B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +207,8 @@
 				B423FB942231829D001F345B /* FIFA.app */,
 				B423FBA6223182A2001F345B /* FIFA WatchKit App.app */,
 				B423FBB5223182A3001F345B /* FIFA WatchKit Extension.appex */,
+				EC4AF26622346E1500C7B4A8 /* FifaKit.framework */,
+				EC4AF283223471D500C7B4A8 /* fifaKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +218,7 @@
 			children = (
 				B423FB972231829D001F345B /* AppDelegate.swift */,
 				B423FB992231829D001F345B /* ViewController.swift */,
+				B423FBD72231A667001F345B /* FifaTableCell.swift */,
 				B423FB9B2231829D001F345B /* Main.storyboard */,
 				B423FB9E223182A2001F345B /* Assets.xcassets */,
 				B423FBA0223182A2001F345B /* LaunchScreen.storyboard */,
@@ -155,11 +246,58 @@
 				B423FBC0223182A4001F345B /* Assets.xcassets */,
 				B423FBC2223182A4001F345B /* Info.plist */,
 				B423FBC3223182A4001F345B /* PushNotificationPayload.apns */,
+				EC4AF29F2234D08D00C7B4A8 /* ScheduleController.swift */,
+				EC4AF2A12234D11100C7B4A8 /* ScheduleInterfaceController.swift */,
+				EC4AF2A3223576CD00C7B4A8 /* SubscriptionInterfaceController.swift */,
+				EC4AF2A5223576FE00C7B4A8 /* SubscriptionController.swift */,
 			);
 			path = "FIFA WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		EC4AF26722346E1500C7B4A8 /* FifaKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC4AF2942234734F00C7B4A8 /* Handler.swift */,
+				EC4AF2952234734F00C7B4A8 /* Match.swift */,
+				EC4AF2932234734F00C7B4A8 /* Team.swift */,
+				EC4AF26822346E1500C7B4A8 /* FifaKit.h */,
+				EC4AF26922346E1500C7B4A8 /* Info.plist */,
+			);
+			path = FifaKit;
+			sourceTree = "<group>";
+		};
+		EC4AF284223471D500C7B4A8 /* fifaKit */ = {
+			isa = PBXGroup;
+			children = (
+				B423FBD1223182C5001F345B /* Team.swift */,
+				B423FBD3223182DA001F345B /* Match.swift */,
+				B423FBD522318A98001F345B /* Handler.swift */,
+				EC4AF285223471D500C7B4A8 /* fifaKit.h */,
+				EC4AF286223471D500C7B4A8 /* Info.plist */,
+			);
+			path = fifaKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EC4AF26122346E1500C7B4A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4AF26A22346E1500C7B4A8 /* FifaKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF27E223471D500C7B4A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4AF287223471D500C7B4A8 /* fifaKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B423FB932231829D001F345B /* FIFA */ = {
@@ -170,11 +308,13 @@
 				B423FB912231829D001F345B /* Frameworks */,
 				B423FB922231829D001F345B /* Resources */,
 				B423FBCD223182A4001F345B /* Embed Watch Content */,
+				EC4AF27222346E1500C7B4A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B423FBA9223182A2001F345B /* PBXTargetDependency */,
+				EC4AF26C22346E1500C7B4A8 /* PBXTargetDependency */,
 			);
 			name = FIFA;
 			productName = FIFA;
@@ -205,15 +345,53 @@
 				B423FBB1223182A3001F345B /* Sources */,
 				B423FBB2223182A3001F345B /* Frameworks */,
 				B423FBB3223182A3001F345B /* Resources */,
+				EC4AF28F223471D500C7B4A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC4AF289223471D500C7B4A8 /* PBXTargetDependency */,
 			);
 			name = "FIFA WatchKit Extension";
 			productName = "FIFA WatchKit Extension";
 			productReference = B423FBB5223182A3001F345B /* FIFA WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		EC4AF26522346E1500C7B4A8 /* FifaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4AF26F22346E1500C7B4A8 /* Build configuration list for PBXNativeTarget "FifaKit" */;
+			buildPhases = (
+				EC4AF26122346E1500C7B4A8 /* Headers */,
+				EC4AF26222346E1500C7B4A8 /* Sources */,
+				EC4AF26322346E1500C7B4A8 /* Frameworks */,
+				EC4AF26422346E1500C7B4A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FifaKit;
+			productName = FifaKit;
+			productReference = EC4AF26622346E1500C7B4A8 /* FifaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC4AF282223471D500C7B4A8 /* fifaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4AF28C223471D500C7B4A8 /* Build configuration list for PBXNativeTarget "fifaKit" */;
+			buildPhases = (
+				EC4AF27E223471D500C7B4A8 /* Headers */,
+				EC4AF27F223471D500C7B4A8 /* Sources */,
+				EC4AF280223471D500C7B4A8 /* Frameworks */,
+				EC4AF281223471D500C7B4A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fifaKit;
+			productName = fifaKit;
+			productReference = EC4AF283223471D500C7B4A8 /* fifaKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -234,6 +412,13 @@
 					B423FBB4223182A3001F345B = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					EC4AF26522346E1500C7B4A8 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					EC4AF282223471D500C7B4A8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = B423FB8F2231829D001F345B /* Build configuration list for PBXProject "FIFA" */;
@@ -252,6 +437,8 @@
 				B423FB932231829D001F345B /* FIFA */,
 				B423FBA5223182A2001F345B /* FIFA WatchKit App */,
 				B423FBB4223182A3001F345B /* FIFA WatchKit Extension */,
+				EC4AF26522346E1500C7B4A8 /* FifaKit */,
+				EC4AF282223471D500C7B4A8 /* fifaKit */,
 			);
 		};
 /* End PBXProject section */
@@ -284,6 +471,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC4AF26422346E1500C7B4A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF281223471D500C7B4A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B423FB9A2231829D001F345B /* ViewController.swift in Sources */,
+				EC4AF27D22346FC600C7B4A8 /* FifaTableCell.swift in Sources */,
 				B423FB982231829D001F345B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +502,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4AF2A22234D11100C7B4A8 /* ScheduleInterfaceController.swift in Sources */,
+				EC4AF2A6223576FE00C7B4A8 /* SubscriptionController.swift in Sources */,
 				B423FBBF223182A3001F345B /* NotificationController.swift in Sources */,
+				EC4AF2A4223576CD00C7B4A8 /* SubscriptionInterfaceController.swift in Sources */,
 				B423FBBD223182A3001F345B /* ExtensionDelegate.swift in Sources */,
+				EC4AF2A02234D08D00C7B4A8 /* ScheduleController.swift in Sources */,
 				B423FBBB223182A3001F345B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF26222346E1500C7B4A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4AF2972234734F00C7B4A8 /* Handler.swift in Sources */,
+				EC4AF2962234734F00C7B4A8 /* Team.swift in Sources */,
+				EC4AF2982234734F00C7B4A8 /* Match.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4AF27F223471D500C7B4A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4AF2922234731800C7B4A8 /* Handler.swift in Sources */,
+				EC4AF2912234731800C7B4A8 /* Team.swift in Sources */,
+				EC4AF2902234731800C7B4A8 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +544,16 @@
 			isa = PBXTargetDependency;
 			target = B423FBB4223182A3001F345B /* FIFA WatchKit Extension */;
 			targetProxy = B423FBB7223182A3001F345B /* PBXContainerItemProxy */;
+		};
+		EC4AF26C22346E1500C7B4A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4AF26522346E1500C7B4A8 /* FifaKit */;
+			targetProxy = EC4AF26B22346E1500C7B4A8 /* PBXContainerItemProxy */;
+		};
+		EC4AF289223471D500C7B4A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4AF282223471D500C7B4A8 /* fifaKit */;
+			targetProxy = EC4AF288223471D500C7B4A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -550,6 +786,7 @@
 		B423FBCF223182A4001F345B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CHA92P94AV;
@@ -568,6 +805,7 @@
 		B423FBD0223182A4001F345B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CHA92P94AV;
@@ -580,6 +818,127 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC4AF27022346E1500C7B4A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CHA92P94AV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FifaKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Himauli.FifaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC4AF27122346E1500C7B4A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CHA92P94AV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FifaKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Himauli.FifaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC4AF28D223471D500C7B4A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CHA92P94AV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = fifaKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Himauli.fifaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		EC4AF28E223471D500C7B4A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CHA92P94AV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = fifaKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Himauli.fifaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -618,6 +977,24 @@
 			buildConfigurations = (
 				B423FBCF223182A4001F345B /* Debug */,
 				B423FBD0223182A4001F345B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4AF26F22346E1500C7B4A8 /* Build configuration list for PBXNativeTarget "FifaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4AF27022346E1500C7B4A8 /* Debug */,
+				EC4AF27122346E1500C7B4A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4AF28C223471D500C7B4A8 /* Build configuration list for PBXNativeTarget "fifaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4AF28D223471D500C7B4A8 /* Debug */,
+				EC4AF28E223471D500C7B4A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
